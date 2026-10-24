@@ -1,0 +1,4 @@
+{"id":"tr-normalization-01","category":"normalization","prompt":"İstanbul Türkiye'nin en kalabalık şehridir.","reference":"İstanbul Türkiye'nin en kalabalık şehridir."}
+{"id":"tr-math-01","category":"arithmetic","prompt":"17 ile 25'in toplamı kaçtır?","reference":"42"}
+{"id":"tr-comprehension-01","category":"reading_comprehension","prompt":"Metin: Ayşe sabah 08.00'de evden çıktı ve 08.30'da okula ulaştı. Soru: Ayşe okula kaçta ulaştı?","reference":"08.30"}
+{"id":"tr-instruction-01","category":"instruction_following","prompt":"Şu cümleyi tek kelimeyle sınıflandır: 'Bugün hava çok güzel.' Duygu: olumlu.","reference":"olumlu"}

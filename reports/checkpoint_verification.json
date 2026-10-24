@@ -1,0 +1,29 @@
+{
+  "status": "checkpoint_architecture_compatible",
+  "checkpoint": "/mnt/data/ups-dups-enterprise/checkpoints/latest.pt",
+  "checkpoint_bytes": 3020235,
+  "sha256": "901c02c27ac9a13298754b02a8b4f41282fd92b16b9a5307e9136d1171692701",
+  "step": 2,
+  "config": "/mnt/data/ups-dups-enterprise/configs/dev.yaml",
+  "model_config": {
+    "vocab_size": 260,
+    "d_model": 64,
+    "n_layers": 2,
+    "n_heads": 4,
+    "n_kv_heads": 4,
+    "d_ff": 128,
+    "max_seq_len": 32,
+    "rope_theta": 10000.0,
+    "dropout": 0.0,
+    "num_experts": 4,
+    "top_k": 2,
+    "moe_every_n_layers": 1,
+    "expert_capacity_factor": 1.25
+  },
+  "configured_vocab_size": 260,
+  "state_tensor_count": 46,
+  "unique_model_parameter_elements": 247168,
+  "state_tensor_elements_including_tied_aliases": 263808,
+  "optimizer_state_present": true,
+  "warning": "This confirms strict state-dict compatibility with the supplied config; it does not prove model quality or useful training."
+}

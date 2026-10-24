@@ -1,0 +1,27 @@
+# Illustrative scalable target, NOT a 2.8T model. Check parameter report first.
+seed: 1337
+model:
+  vocab_size: 260
+  d_model: 4096
+  n_layers: 80
+  n_heads: 64
+  n_kv_heads: 8
+  d_ff: 14336
+  max_seq_len: 8192
+  rope_theta: 10000.0
+  dropout: 0.0
+  num_experts: 64
+  top_k: 2
+  moe_every_n_layers: 1
+  expert_capacity_factor: 1.25
+training:
+  batch_size: 1
+  grad_accum_steps: 128
+  learning_rate: 0.0001
+  min_learning_rate: 0.00001
+  weight_decay: 0.1
+  warmup_steps: 2000
+  max_steps: 1000000
+  grad_clip: 1.0
+  eval_interval: 1000
+  checkpoint_dir: checkpoints

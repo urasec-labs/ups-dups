@@ -1,0 +1,6 @@
+# Train a byte-level BPE tokenizer separately, then set model.vocab_size to the saved tokenizer's vocab_size.
+tokenizer:
+  algorithm: byte_bpe
+  target_vocab_size: 8192
+  min_frequency: 2
+  output: artifacts/tokenizer.json

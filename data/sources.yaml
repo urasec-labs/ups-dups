@@ -1,0 +1,27 @@
+# Candidate sources for human review. This file is not a claim that any snapshot is approved.
+# Verify the exact snapshot's license, terms, attribution, privacy, and model-training permissions before ingestion.
+sources:
+  - id: wikimedia_trwiki_dump
+    name: Wikimedia Turkish Wikipedia dump
+    language: tr
+    status: candidate_requires_review
+    license_review: Verify the dump's current licensing and attribution/share-alike obligations; individual files may have different rights.
+    provenance_required: [snapshot_date, dump_url, checksum, license_url, attribution_plan, exclusions]
+  - id: opus_corpus_specific
+    name: OPUS parallel/text corpora (select corpus individually)
+    language: tr-multilingual
+    status: candidate_requires_review
+    license_review: OPUS contains distinct corpora with different licenses; never treat OPUS as one license.
+    provenance_required: [corpus_name, version, source_url, license_url, allowed_use, attribution, filtering_policy]
+  - id: public_institutional_texts
+    name: Public institutional publications (source-by-source)
+    language: tr
+    status: candidate_requires_review
+    license_review: Public availability alone does not imply permission for ML training; record explicit license or legal basis for every source.
+    provenance_required: [publisher, document_url, retrieval_date, license_or_permission, checksum, privacy_review]
+  - id: user_owned_or_commissioned
+    name: User-owned or explicitly commissioned text
+    language: tr
+    status: preferred_when_rights_are_documented
+    license_review: Keep written permission and intended training-use scope; remove confidential and personal data unless lawfully approved.
+    provenance_required: [owner, permission_record, scope, retrieval_date, checksum, privacy_review]

@@ -1,0 +1,44 @@
+{
+  "warning": "Tiny smoke suite; not a validated benchmark and not evidence of general Turkish capability.",
+  "cases": 4,
+  "normalized_match_count": 0,
+  "normalized_match_rate": 0.0,
+  "results": [
+    {
+      "id": "tr-normalization-01",
+      "category": "normalization",
+      "prompt": "İstanbul Türkiye'nin en kalabalık şehridir.",
+      "reference": "İstanbul Türkiye'nin en kalabalık şehridir.",
+      "prompt_truncated": true,
+      "prediction": "...............................",
+      "normalized_match": false
+    },
+    {
+      "id": "tr-math-01",
+      "category": "arithmetic",
+      "prompt": "17 ile 25'in toplamı kaçtır?",
+      "reference": "42",
+      "prompt_truncated": true,
+      "prediction": "???????????????????????????????",
+      "normalized_match": false
+    },
+    {
+      "id": "tr-comprehension-01",
+      "category": "reading_comprehension",
+      "prompt": "Metin: Ayşe sabah 08.00'de evden çıktı ve 08.30'da okula ulaştı. Soru: Ayşe okula kaçta ulaştı?",
+      "reference": "08.30",
+      "prompt_truncated": true,
+      "prediction": "???????????????????????????????",
+      "normalized_match": false
+    },
+    {
+      "id": "tr-instruction-01",
+      "category": "instruction_following",
+      "prompt": "Şu cümleyi tek kelimeyle sınıflandır: 'Bugün hava çok güzel.' Duygu: olumlu.",
+      "reference": "olumlu",
+      "prompt_truncated": true,
+      "prediction": "...............................",
+      "normalized_match": false
+    }
+  ]
+}

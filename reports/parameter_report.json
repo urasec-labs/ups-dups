@@ -1,0 +1,48 @@
+{
+  "config": "configs/dev.yaml",
+  "model_config": {
+    "vocab_size": 260,
+    "d_model": 64,
+    "n_layers": 2,
+    "n_heads": 4,
+    "n_kv_heads": 4,
+    "d_ff": 128,
+    "max_seq_len": 32,
+    "rope_theta": 10000.0,
+    "dropout": 0.0,
+    "num_experts": 4,
+    "top_k": 2,
+    "moe_every_n_layers": 1,
+    "expert_capacity_factor": 1.25
+  },
+  "parameter_counts": {
+    "total_parameters": 247168,
+    "expert_parameters": 196608,
+    "router_parameters": 512,
+    "shared_parameters": 50048,
+    "active_expert_parameters_per_token": 98304,
+    "approx_active_parameters_per_token": 148864,
+    "moe_layers": 2,
+    "dense_layers": 0
+  },
+  "targets": {
+    "total": 2800000000000,
+    "active": 104000000000
+  },
+  "target_check": {
+    "total_target_met": false,
+    "active_target_met": false,
+    "total_gap": 2799999752832,
+    "active_gap": 103999851136
+  },
+  "context_memory": {
+    "context_tokens": 1000000,
+    "batch_size": 1,
+    "kv_cache_bytes_approx": 512000000,
+    "kv_cache_gib_approx": 0.476837158203125,
+    "dense_attention_score_tensor_bytes_if_materialized": 8000000000000,
+    "dense_attention_score_tensor_gib_if_materialized": 7450.580596923828,
+    "note": "Excludes weights, activations, optimizer states, and runtime overhead; optimized SDPA may avoid materializing dense score tensor."
+  },
+  "status": "configuration-derived estimate; not a loaded or trained model"
+}

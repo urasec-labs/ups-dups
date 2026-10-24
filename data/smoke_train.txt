@@ -1,0 +1,19 @@
+Ups-dups is a small language model engineering experiment.
+
+Türkçe dil işleme, veri kalitesi ve model değerlendirmesi önemlidir.
+
+A decoder-only transformer predicts the next token from previous tokens.
+
+Mixture of Experts routes each token to a subset of feed-forward experts.
+
+Eğitim verisi izinli, belgelenmiş ve mümkün olduğunca temiz olmalıdır.
+
+Causal attention prevents a position from seeing future tokens.
+
+A checkpoint stores model parameters and optimizer state for resuming training.
+
+Bu küçük örnek veri kümesi yalnızca yazılım testleri içindir.
+
+Model başarımı ölçülmeden doğrulanmış gibi sunulmamalıdır.
+
+Validation data should be separate from training documents.
